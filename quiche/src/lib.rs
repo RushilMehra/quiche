@@ -6810,6 +6810,7 @@ impl Connection {
                     self.handshake.provide_data(level, recv_buf)?;
                 }
 
+                println!("do_handshake()");
                 self.do_handshake(now)?;
             },
 
